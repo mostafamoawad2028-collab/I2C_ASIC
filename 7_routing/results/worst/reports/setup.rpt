@@ -1,0 +1,666 @@
+Information: Deserialized np data
+INFO: timer data loaded from /tmp/i2c_master_top_route_24369_203941888.timdat
+Information: The RC mode used is DR for design 'i2c_master_top'. (NEX-022)
+---extraction options---
+Corner: default
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ late_ccap_scale               : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+ early_ccap_scale              : 1
+Global options:
+ late_ccap_threshold       : 0.003pf
+ late_ccap_ratio           : 0.03
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 4
+ extract.connect_open           : true
+ extract.incremental_extraction : true
+ extract.enable_coupling_cap    : true
+Extracting design: i2c_master_top_route 
+Information: coupling capacitance is created explicitly. (NEX-029)
+Information: 953 nets are successfully extracted. (NEX-028)
+Information: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 953, routed nets = 953, across physical hierarchy nets = 0, parasitics cached nets = 953, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 10
+        -report_by design
+Design : i2c_master_top
+Version: O-2018.06-SP1
+Date   : Tue Sep 15 07:36:48 2026
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+  Startpoint: byte_controller/bit_controller/filter_cnt_reg_1_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/filter_cnt_reg_13_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 2.13      2.13
+
+  byte_controller/bit_controller/filter_cnt_reg_1_/CLK (DFFARX1_HVT)
+                                                   0.00      2.13 r
+  byte_controller/bit_controller/filter_cnt_reg_1_/QN (DFFARX1_HVT)
+                                                   1.31      3.43 r
+  byte_controller/bit_controller/U15/ZN (INVX0_HVT)
+                                                   0.40      3.83 f
+  byte_controller/bit_controller/sub_260/U41/Q (OR2X1_HVT)
+                                                   0.52      4.35 f
+  byte_controller/bit_controller/sub_260/U20/QN (NOR2X1_HVT)
+                                                   0.29      4.65 r
+  byte_controller/bit_controller/sub_260/U69/ZN (INVX0_HVT)
+                                                   0.38      5.03 f
+  byte_controller/bit_controller/sub_260/U57/Q (OR2X1_HVT)
+                                                   0.52      5.55 f
+  byte_controller/bit_controller/sub_260/U50/Q (OR2X1_HVT)
+                                                   0.56      6.11 f
+  byte_controller/bit_controller/sub_260/U61/QN (NOR2X1_HVT)
+                                                   0.36      6.46 r
+  byte_controller/bit_controller/sub_260/U35/QN (NAND2X1_HVT)
+                                                   0.51      6.98 f
+  byte_controller/bit_controller/sub_260/U3/Q (OR2X1_HVT)
+                                                   0.56      7.54 f
+  byte_controller/bit_controller/sub_260/U62/QN (NOR2X0_HVT)
+                                                   0.30      7.84 r
+  byte_controller/bit_controller/sub_260/U68/ZN (INVX0_HVT)
+                                                   0.42      8.25 f
+  byte_controller/bit_controller/sub_260/U66/QN (NOR2X0_HVT)
+                                                   0.34      8.59 r
+  byte_controller/bit_controller/sub_260/U65/Q (XOR2X1_HVT)
+                                                   0.67      9.26 r
+  byte_controller/bit_controller/U252/QN (NAND2X1_HVT)
+                                                   0.29      9.55 f
+  byte_controller/bit_controller/U253/QN (NAND2X0_HVT)
+                                                   0.27      9.82 r
+  byte_controller/bit_controller/filter_cnt_reg_13_/D (DFFARX1_HVT)
+                                                   0.01      9.82 r
+  data arrival time                                          9.82
+
+  clock wb_clk_i (rise edge)                      10.00     10.00
+  clock network delay (propagated)                 1.99     11.99
+  clock reconvergence pessimism                    0.00     11.99
+  byte_controller/bit_controller/filter_cnt_reg_13_/CLK (DFFARX1_HVT)
+                                                   0.00     11.99 r
+  clock uncertainty                               -0.45     11.54
+  library setup time                              -0.74     10.80
+  data required time                                        10.80
+  ------------------------------------------------------------------------
+  data required time                                        10.80
+  data arrival time                                         -9.82
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.97
+
+
+
+  Startpoint: byte_controller/bit_controller/filter_cnt_reg_1_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/filter_cnt_reg_12_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 2.13      2.13
+
+  byte_controller/bit_controller/filter_cnt_reg_1_/CLK (DFFARX1_HVT)
+                                                   0.00      2.13 r
+  byte_controller/bit_controller/filter_cnt_reg_1_/QN (DFFARX1_HVT)
+                                                   1.31      3.43 r
+  byte_controller/bit_controller/U15/ZN (INVX0_HVT)
+                                                   0.40      3.83 f
+  byte_controller/bit_controller/sub_260/U41/Q (OR2X1_HVT)
+                                                   0.52      4.35 f
+  byte_controller/bit_controller/sub_260/U20/QN (NOR2X1_HVT)
+                                                   0.29      4.65 r
+  byte_controller/bit_controller/sub_260/U69/ZN (INVX0_HVT)
+                                                   0.38      5.03 f
+  byte_controller/bit_controller/sub_260/U57/Q (OR2X1_HVT)
+                                                   0.52      5.55 f
+  byte_controller/bit_controller/sub_260/U50/Q (OR2X1_HVT)
+                                                   0.56      6.11 f
+  byte_controller/bit_controller/sub_260/U61/QN (NOR2X1_HVT)
+                                                   0.36      6.46 r
+  byte_controller/bit_controller/sub_260/U35/QN (NAND2X1_HVT)
+                                                   0.51      6.98 f
+  byte_controller/bit_controller/sub_260/U3/Q (OR2X1_HVT)
+                                                   0.56      7.54 f
+  byte_controller/bit_controller/sub_260/U62/QN (NOR2X0_HVT)
+                                                   0.30      7.84 r
+  byte_controller/bit_controller/sub_260/U68/ZN (INVX0_HVT)
+                                                   0.42      8.25 f
+  byte_controller/bit_controller/sub_260/U67/Q (XNOR2X1_HVT)
+                                                   1.03      9.28 r
+  byte_controller/bit_controller/U118/QN (NAND2X1_HVT)
+                                                   0.27      9.55 f
+  byte_controller/bit_controller/U119/QN (NAND2X0_HVT)
+                                                   0.23      9.78 r
+  byte_controller/bit_controller/filter_cnt_reg_12_/D (DFFARX1_HVT)
+                                                   0.02      9.80 r
+  data arrival time                                          9.80
+
+  clock wb_clk_i (rise edge)                      10.00     10.00
+  clock network delay (propagated)                 1.99     11.99
+  clock reconvergence pessimism                    0.00     11.99
+  byte_controller/bit_controller/filter_cnt_reg_12_/CLK (DFFARX1_HVT)
+                                                   0.00     11.99 r
+  clock uncertainty                               -0.45     11.54
+  library setup time                              -0.74     10.80
+  data required time                                        10.80
+  ------------------------------------------------------------------------
+  data required time                                        10.80
+  data arrival time                                         -9.80
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.00
+
+
+
+  Startpoint: byte_controller/bit_controller/cnt_reg_3_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/cnt_reg_15_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 2.00      2.00
+
+  byte_controller/bit_controller/cnt_reg_3_/CLK (DFFARX1_HVT)
+                                                   0.00      2.00 r
+  byte_controller/bit_controller/cnt_reg_3_/Q (DFFARX1_HVT)
+                                                   1.80      3.80 f
+  byte_controller/bit_controller/sub_228/U24/QN (NOR2X1_HVT)
+                                                   0.31      4.11 r
+  byte_controller/bit_controller/sub_228/U41/QN (NAND2X1_HVT)
+                                                   0.35      4.45 f
+  byte_controller/bit_controller/sub_228/U39/QN (NOR2X1_HVT)
+                                                   0.23      4.68 r
+  byte_controller/bit_controller/sub_228/U37/QN (NAND2X1_HVT)
+                                                   0.46      5.14 f
+  byte_controller/bit_controller/sub_228/U6/QN (NOR2X1_HVT)
+                                                   0.38      5.52 r
+  byte_controller/bit_controller/sub_228/U71/ZN (INVX0_HVT)
+                                                   0.35      5.87 f
+  byte_controller/bit_controller/sub_228/U59/QN (NOR2X0_HVT)
+                                                   0.29      6.16 r
+  byte_controller/bit_controller/sub_228/U70/ZN (INVX0_HVT)
+                                                   0.37      6.53 f
+  byte_controller/bit_controller/sub_228/U13/Q (OR2X1_HVT)
+                                                   0.46      6.99 f
+  byte_controller/bit_controller/sub_228/U14/QN (NOR2X0_HVT)
+                                                   0.36      7.35 r
+  byte_controller/bit_controller/sub_228/U25/ZN (INVX0_HVT)
+                                                   0.45      7.80 f
+  byte_controller/bit_controller/sub_228/U65/QN (NOR2X0_HVT)
+                                                   0.32      8.12 r
+  byte_controller/bit_controller/sub_228/U64/Q (XOR2X1_HVT)
+                                                   0.68      8.80 r
+  byte_controller/bit_controller/U10/Q (AO222X1_HVT)
+                                                   0.89      9.69 r
+  byte_controller/bit_controller/cnt_reg_15_/D (DFFARX1_HVT)
+                                                   0.00      9.69 r
+  data arrival time                                          9.69
+
+  clock wb_clk_i (rise edge)                      10.00     10.00
+  clock network delay (propagated)                 1.99     11.99
+  clock reconvergence pessimism                    0.00     11.99
+  byte_controller/bit_controller/cnt_reg_15_/CLK (DFFARX1_HVT)
+                                                   0.00     11.99 r
+  clock uncertainty                               -0.45     11.54
+  library setup time                              -0.75     10.79
+  data required time                                        10.79
+  ------------------------------------------------------------------------
+  data required time                                        10.79
+  data arrival time                                         -9.69
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.10
+
+
+
+  Startpoint: byte_controller/bit_controller/cnt_reg_3_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/cnt_reg_13_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 2.00      2.00
+
+  byte_controller/bit_controller/cnt_reg_3_/CLK (DFFARX1_HVT)
+                                                   0.00      2.00 r
+  byte_controller/bit_controller/cnt_reg_3_/Q (DFFARX1_HVT)
+                                                   1.80      3.80 f
+  byte_controller/bit_controller/sub_228/U24/QN (NOR2X1_HVT)
+                                                   0.31      4.11 r
+  byte_controller/bit_controller/sub_228/U41/QN (NAND2X1_HVT)
+                                                   0.35      4.45 f
+  byte_controller/bit_controller/sub_228/U39/QN (NOR2X1_HVT)
+                                                   0.23      4.68 r
+  byte_controller/bit_controller/sub_228/U37/QN (NAND2X1_HVT)
+                                                   0.46      5.14 f
+  byte_controller/bit_controller/sub_228/U6/QN (NOR2X1_HVT)
+                                                   0.38      5.52 r
+  byte_controller/bit_controller/sub_228/U71/ZN (INVX0_HVT)
+                                                   0.35      5.87 f
+  byte_controller/bit_controller/sub_228/U59/QN (NOR2X0_HVT)
+                                                   0.29      6.16 r
+  byte_controller/bit_controller/sub_228/U70/ZN (INVX0_HVT)
+                                                   0.37      6.53 f
+  byte_controller/bit_controller/sub_228/U42/Q (OR2X1_HVT)
+                                                   0.54      7.07 f
+  byte_controller/bit_controller/sub_228/U29/Q (OR2X1_HVT)
+                                                   0.51      7.58 f
+  byte_controller/bit_controller/sub_228/U23/QN (NOR2X0_HVT)
+                                                   0.39      7.97 r
+  byte_controller/bit_controller/sub_228/U38/ZN (INVX0_HVT)
+                                                   0.42      8.39 f
+  byte_controller/bit_controller/sub_228/U10/Q (AO21X1_HVT)
+                                                   0.69      9.08 f
+  byte_controller/bit_controller/U104/Q (AO222X1_HVT)
+                                                   0.83      9.91 f
+  byte_controller/bit_controller/cnt_reg_13_/D (DFFARX1_HVT)
+                                                   0.00      9.91 f
+  data arrival time                                          9.91
+
+  clock wb_clk_i (rise edge)                      10.00     10.00
+  clock network delay (propagated)                 2.00     12.00
+  clock reconvergence pessimism                    0.00     12.00
+  byte_controller/bit_controller/cnt_reg_13_/CLK (DFFARX1_HVT)
+                                                   0.00     12.00 r
+  clock uncertainty                               -0.45     11.55
+  library setup time                              -0.52     11.03
+  data required time                                        11.03
+  ------------------------------------------------------------------------
+  data required time                                        11.03
+  data arrival time                                         -9.91
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.12
+
+
+
+  Startpoint: byte_controller/bit_controller/cnt_reg_3_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/cnt_reg_14_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 2.00      2.00
+
+  byte_controller/bit_controller/cnt_reg_3_/CLK (DFFARX1_HVT)
+                                                   0.00      2.00 r
+  byte_controller/bit_controller/cnt_reg_3_/Q (DFFARX1_HVT)
+                                                   1.80      3.80 f
+  byte_controller/bit_controller/sub_228/U24/QN (NOR2X1_HVT)
+                                                   0.31      4.11 r
+  byte_controller/bit_controller/sub_228/U41/QN (NAND2X1_HVT)
+                                                   0.35      4.45 f
+  byte_controller/bit_controller/sub_228/U39/QN (NOR2X1_HVT)
+                                                   0.23      4.68 r
+  byte_controller/bit_controller/sub_228/U37/QN (NAND2X1_HVT)
+                                                   0.46      5.14 f
+  byte_controller/bit_controller/sub_228/U6/QN (NOR2X1_HVT)
+                                                   0.38      5.52 r
+  byte_controller/bit_controller/sub_228/U71/ZN (INVX0_HVT)
+                                                   0.35      5.87 f
+  byte_controller/bit_controller/sub_228/U59/QN (NOR2X0_HVT)
+                                                   0.29      6.16 r
+  byte_controller/bit_controller/sub_228/U70/ZN (INVX0_HVT)
+                                                   0.37      6.53 f
+  byte_controller/bit_controller/sub_228/U13/Q (OR2X1_HVT)
+                                                   0.46      6.99 f
+  byte_controller/bit_controller/sub_228/U14/QN (NOR2X0_HVT)
+                                                   0.36      7.35 r
+  byte_controller/bit_controller/sub_228/U67/ZN (INVX0_HVT)
+                                                   0.41      7.76 f
+  byte_controller/bit_controller/sub_228/U66/Q (XNOR2X1_HVT)
+                                                   0.96      8.72 r
+  byte_controller/bit_controller/U12/Q (AO222X1_HVT)
+                                                   0.91      9.63 r
+  byte_controller/bit_controller/cnt_reg_14_/D (DFFARX1_HVT)
+                                                   0.01      9.64 r
+  data arrival time                                          9.64
+
+  clock wb_clk_i (rise edge)                      10.00     10.00
+  clock network delay (propagated)                 2.00     12.00
+  clock reconvergence pessimism                    0.00     12.00
+  byte_controller/bit_controller/cnt_reg_14_/CLK (DFFARX1_HVT)
+                                                   0.00     12.00 r
+  clock uncertainty                               -0.45     11.55
+  library setup time                              -0.75     10.80
+  data required time                                        10.80
+  ------------------------------------------------------------------------
+  data required time                                        10.80
+  data arrival time                                         -9.64
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.16
+
+
+
+  Startpoint: byte_controller/bit_controller/cnt_reg_3_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/cnt_reg_12_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 2.00      2.00
+
+  byte_controller/bit_controller/cnt_reg_3_/CLK (DFFARX1_HVT)
+                                                   0.00      2.00 r
+  byte_controller/bit_controller/cnt_reg_3_/Q (DFFARX1_HVT)
+                                                   1.80      3.80 f
+  byte_controller/bit_controller/sub_228/U24/QN (NOR2X1_HVT)
+                                                   0.31      4.11 r
+  byte_controller/bit_controller/sub_228/U41/QN (NAND2X1_HVT)
+                                                   0.35      4.45 f
+  byte_controller/bit_controller/sub_228/U39/QN (NOR2X1_HVT)
+                                                   0.23      4.68 r
+  byte_controller/bit_controller/sub_228/U37/QN (NAND2X1_HVT)
+                                                   0.46      5.14 f
+  byte_controller/bit_controller/sub_228/U6/QN (NOR2X1_HVT)
+                                                   0.38      5.52 r
+  byte_controller/bit_controller/sub_228/U71/ZN (INVX0_HVT)
+                                                   0.35      5.87 f
+  byte_controller/bit_controller/sub_228/U59/QN (NOR2X0_HVT)
+                                                   0.29      6.16 r
+  byte_controller/bit_controller/sub_228/U70/ZN (INVX0_HVT)
+                                                   0.37      6.53 f
+  byte_controller/bit_controller/sub_228/U42/Q (OR2X1_HVT)
+                                                   0.54      7.07 f
+  byte_controller/bit_controller/sub_228/U29/Q (OR2X1_HVT)
+                                                   0.51      7.58 f
+  byte_controller/bit_controller/sub_228/U23/QN (NOR2X0_HVT)
+                                                   0.39      7.97 r
+  byte_controller/bit_controller/sub_228/U68/Q (AO21X1_HVT)
+                                                   0.55      8.53 r
+  byte_controller/bit_controller/U16/Q (AO222X1_HVT)
+                                                   0.91      9.44 r
+  byte_controller/bit_controller/cnt_reg_12_/D (DFFARX1_HVT)
+                                                   0.01      9.45 r
+  data arrival time                                          9.45
+
+  clock wb_clk_i (rise edge)                      10.00     10.00
+  clock network delay (propagated)                 2.03     12.03
+  clock reconvergence pessimism                    0.00     12.03
+  byte_controller/bit_controller/cnt_reg_12_/CLK (DFFARX1_HVT)
+                                                   0.00     12.03 r
+  clock uncertainty                               -0.45     11.58
+  library setup time                              -0.76     10.82
+  data required time                                        10.82
+  ------------------------------------------------------------------------
+  data required time                                        10.82
+  data arrival time                                         -9.45
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.37
+
+
+
+  Startpoint: byte_controller/bit_controller/c_state_reg_14_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/c_state_reg_0_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 1.97      1.97
+
+  byte_controller/bit_controller/c_state_reg_14_/CLK (DFFARX1_HVT)
+                                                   0.00      1.97 r
+  byte_controller/bit_controller/c_state_reg_14_/Q (DFFARX1_HVT)
+                                                   1.81      3.78 f
+  byte_controller/bit_controller/U27/ZN (INVX0_HVT)
+                                                   0.20      3.98 r
+  byte_controller/bit_controller/U31/QN (NAND2X0_HVT)
+                                                   0.35      4.33 f
+  byte_controller/bit_controller/U33/ZN (INVX0_HVT)
+                                                   0.23      4.56 r
+  byte_controller/bit_controller/U30/QN (NAND2X0_HVT)
+                                                   0.47      5.04 f
+  byte_controller/bit_controller/U23/ZN (INVX0_HVT)
+                                                   0.33      5.37 r
+  byte_controller/bit_controller/U139/QN (NAND4X0_HVT)
+                                                   0.54      5.91 f
+  byte_controller/bit_controller/U133/Q (OR2X1_HVT)
+                                                   0.62      6.53 f
+  byte_controller/bit_controller/U132/QN (NOR2X0_HVT)
+                                                   0.34      6.87 r
+  byte_controller/bit_controller/U131/ZN (INVX0_HVT)
+                                                   0.47      7.33 f
+  byte_controller/bit_controller/U56/QN (NOR3X1_HVT)
+                                                   0.93      8.26 r
+  byte_controller/bit_controller/U88/QN (NAND4X0_HVT)
+                                                   0.45      8.71 f
+  byte_controller/bit_controller/U87/QN (OAI21X1_HVT)
+                                                   0.83      9.54 r
+  byte_controller/bit_controller/c_state_reg_0_/D (DFFARX1_HVT)
+                                                   0.00      9.54 r
+  data arrival time                                          9.54
+
+  clock wb_clk_i (rise edge)                      10.00     10.00
+  clock network delay (propagated)                 2.02     12.02
+  clock reconvergence pessimism                    0.00     12.02
+  byte_controller/bit_controller/c_state_reg_0_/CLK (DFFARX1_HVT)
+                                                   0.00     12.02 r
+  clock uncertainty                               -0.45     11.57
+  library setup time                              -0.65     10.92
+  data required time                                        10.92
+  ------------------------------------------------------------------------
+  data required time                                        10.92
+  data arrival time                                         -9.54
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.38
+
+
+
+  Startpoint: byte_controller/bit_controller/c_state_reg_14_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/c_state_reg_13_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 1.97      1.97
+
+  byte_controller/bit_controller/c_state_reg_14_/CLK (DFFARX1_HVT)
+                                                   0.00      1.97 r
+  byte_controller/bit_controller/c_state_reg_14_/Q (DFFARX1_HVT)
+                                                   1.81      3.78 f
+  byte_controller/bit_controller/U27/ZN (INVX0_HVT)
+                                                   0.20      3.98 r
+  byte_controller/bit_controller/U31/QN (NAND2X0_HVT)
+                                                   0.35      4.33 f
+  byte_controller/bit_controller/U33/ZN (INVX0_HVT)
+                                                   0.23      4.56 r
+  byte_controller/bit_controller/U30/QN (NAND2X0_HVT)
+                                                   0.47      5.04 f
+  byte_controller/bit_controller/U23/ZN (INVX0_HVT)
+                                                   0.33      5.37 r
+  byte_controller/bit_controller/U139/QN (NAND4X0_HVT)
+                                                   0.54      5.91 f
+  byte_controller/bit_controller/U133/Q (OR2X1_HVT)
+                                                   0.62      6.53 f
+  byte_controller/bit_controller/U132/QN (NOR2X0_HVT)
+                                                   0.34      6.87 r
+  byte_controller/bit_controller/U131/ZN (INVX0_HVT)
+                                                   0.47      7.33 f
+  byte_controller/bit_controller/U56/QN (NOR3X1_HVT)
+                                                   0.93      8.26 r
+  byte_controller/bit_controller/U47/QN (NAND4X0_HVT)
+                                                   0.43      8.70 f
+  byte_controller/bit_controller/U46/QN (OAI21X1_HVT)
+                                                   0.81      9.50 r
+  byte_controller/bit_controller/c_state_reg_13_/D (DFFARX1_HVT)
+                                                   0.00      9.51 r
+  data arrival time                                          9.51
+
+  clock wb_clk_i (rise edge)                      10.00     10.00
+  clock network delay (propagated)                 2.02     12.02
+  clock reconvergence pessimism                    0.00     12.02
+  byte_controller/bit_controller/c_state_reg_13_/CLK (DFFARX1_HVT)
+                                                   0.00     12.02 r
+  clock uncertainty                               -0.45     11.57
+  library setup time                              -0.65     10.92
+  data required time                                        10.92
+  ------------------------------------------------------------------------
+  data required time                                        10.92
+  data arrival time                                         -9.51
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.41
+
+
+
+  Startpoint: byte_controller/bit_controller/c_state_reg_14_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/c_state_reg_5_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 1.97      1.97
+
+  byte_controller/bit_controller/c_state_reg_14_/CLK (DFFARX1_HVT)
+                                                   0.00      1.97 r
+  byte_controller/bit_controller/c_state_reg_14_/Q (DFFARX1_HVT)
+                                                   1.81      3.78 f
+  byte_controller/bit_controller/U27/ZN (INVX0_HVT)
+                                                   0.20      3.98 r
+  byte_controller/bit_controller/U31/QN (NAND2X0_HVT)
+                                                   0.35      4.33 f
+  byte_controller/bit_controller/U33/ZN (INVX0_HVT)
+                                                   0.23      4.56 r
+  byte_controller/bit_controller/U30/QN (NAND2X0_HVT)
+                                                   0.47      5.04 f
+  byte_controller/bit_controller/U23/ZN (INVX0_HVT)
+                                                   0.33      5.37 r
+  byte_controller/bit_controller/U139/QN (NAND4X0_HVT)
+                                                   0.54      5.91 f
+  byte_controller/bit_controller/U133/Q (OR2X1_HVT)
+                                                   0.62      6.53 f
+  byte_controller/bit_controller/U132/QN (NOR2X0_HVT)
+                                                   0.34      6.87 r
+  byte_controller/bit_controller/U131/ZN (INVX0_HVT)
+                                                   0.47      7.33 f
+  byte_controller/bit_controller/U56/QN (NOR3X1_HVT)
+                                                   0.93      8.26 r
+  byte_controller/bit_controller/U59/Q (AND2X1_HVT)
+                                                   0.57      8.83 r
+  byte_controller/bit_controller/U58/Q (AO22X1_HVT)
+                                                   0.63      9.46 r
+  byte_controller/bit_controller/c_state_reg_5_/D (DFFARX1_HVT)
+                                                   0.00      9.46 r
+  data arrival time                                          9.46
+
+  clock wb_clk_i (rise edge)                      10.00     10.00
+  clock network delay (propagated)                 2.11     12.11
+  clock reconvergence pessimism                    0.00     12.11
+  byte_controller/bit_controller/c_state_reg_5_/CLK (DFFARX1_HVT)
+                                                   0.00     12.11 r
+  clock uncertainty                               -0.45     11.66
+  library setup time                              -0.71     10.95
+  data required time                                        10.95
+  ------------------------------------------------------------------------
+  data required time                                        10.95
+  data arrival time                                         -9.46
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.49
+
+
+
+  Startpoint: wb_rst_i (input port clocked by wb_clk_i)
+  Endpoint: byte_controller/bit_controller/cnt_reg_2_ (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                       0.00      0.00
+  clock network delay (ideal)                      1.85      1.85
+  input external delay                             1.00      2.85
+
+  wb_rst_i (in)                                    0.15      3.00 f
+  PLACE_HFSINV_3877_f_57/ZN (INVX0_HVT)            0.62      3.62 r
+  PLACE_HFSBUF_1894_55/Z (NBUFFX2_HVT)             0.97      4.59 r
+  byte_controller/bit_controller/U221/QN (NAND2X1_HVT)
+                                                   0.32      4.91 f
+  byte_controller/bit_controller/U187/ZN (INVX0_HVT)
+                                                   0.19      5.10 r
+  byte_controller/bit_controller/U171/QN (NAND2X1_HVT)
+                                                   0.29      5.39 f
+  byte_controller/bit_controller/U186/ZN (INVX1_HVT)
+                                                   0.26      5.65 r
+  byte_controller/bit_controller/U208/QN (NAND2X0_HVT)
+                                                   1.67      7.31 f
+  byte_controller/bit_controller/U188/ZN (INVX1_HVT)
+                                                   0.80      8.11 r
+  byte_controller/bit_controller/U180/QN (NOR2X0_HVT)
+                                                   0.58      8.69 f
+  byte_controller/bit_controller/U183/QN (NOR2X0_HVT)
+                                                   0.30      8.99 r
+  byte_controller/bit_controller/U150/QN (NAND2X1_HVT)
+                                                   0.35      9.34 f
+  byte_controller/bit_controller/cnt_reg_2_/D (DFFARX1_HVT)
+                                                   0.01      9.35 f
+  data arrival time                                          9.35
+
+  clock wb_clk_i (rise edge)                      10.00     10.00
+  clock network delay (propagated)                 2.03     12.03
+  clock reconvergence pessimism                    0.00     12.03
+  byte_controller/bit_controller/cnt_reg_2_/CLK (DFFARX1_HVT)
+                                                   0.00     12.03 r
+  clock uncertainty                               -0.45     11.58
+  library setup time                              -0.53     11.05
+  data required time                                        11.05
+  ------------------------------------------------------------------------
+  data required time                                        11.05
+  data arrival time                                         -9.35
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.71
+
+
+1
