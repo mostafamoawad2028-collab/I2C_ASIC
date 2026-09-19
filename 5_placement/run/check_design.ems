@@ -1,0 +1,22 @@
+<Database>
+Name/mnt/hgfs/VM_shared/ITI/ASIC_I2C/pnr/5_placement/run/check_design.ems
+Creation TimeSun Aug 30 00:29:51 2026
+Modified TimeSun Aug 30 00:29:51 2026
+Design Namei2c_master_top_placement
+Library Namei2c_master_top.dlib
+</Database>
+<RuleCount>
+DFT-0111
+MV-0273
+TCK-0012
+</RuleCount>
+<UserDefinedRules>
+</UserDefinedRules>
+<Messages>
+DFT-011reason10
+MV-027tieNet*Logic1*1[ get_net { *Logic1* } ]8
+MV-027tieNetbyte_controller/*Logic1*1[ get_net { byte_controller/*Logic1* } ]8
+MV-027tieNetbyte_controller/bit_controller/*Logic1*1[ get_net { byte_controller/bit_controller/*Logic1* } ]8
+TCK-001cornerdefault1[ get_corners { default } ]40endpointscl_pad_o1[ get_port { scl_pad_o } ]7modedefault1[ get_modes { default } ]39reasoncase constant10
+TCK-001cornerdefault1[ get_corners { default } ]40endpointsda_pad_o1[ get_port { sda_pad_o } ]7modedefault1[ get_modes { default } ]39reasoncase constant10
+</Messages>

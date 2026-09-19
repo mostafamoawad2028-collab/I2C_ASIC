@@ -1,0 +1,64 @@
+****************************************
+Report : qor
+Design : i2c_master_top
+Version: O-2018.06-SP1
+Date   : Sun Aug 30 00:32:15 2026
+****************************************
+
+
+Scenario           'default'
+Timing Path Group  'wb_clk_i'
+----------------------------------------
+Levels of Logic:                     14
+Critical Path Length:              7.61
+Critical Path Slack:               1.04
+Critical Path Clk Period:         10.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              4
+Hierarchical Port Count:            168
+Leaf Cell Count:                    855
+Buf/Inv Cell Count:                 188
+Buf Cell Count:                      35
+Inv Cell Count:                     153
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:           699
+Sequential Cell Count:              156
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             5462.32
+Noncombinational Area:          4928.72
+Buf/Inv Area:                   1084.72
+Total Buffer Area:               207.36
+Total Inverter Area:             877.36
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                          10391.04
+Cell Area (netlist and physical only):        10391.04
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:               916
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1
