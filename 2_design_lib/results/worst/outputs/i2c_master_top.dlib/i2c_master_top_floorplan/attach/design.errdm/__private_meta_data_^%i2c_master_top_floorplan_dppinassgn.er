@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<errorData typeCount="0" majorVersion="1" minorVersion="8" name="__private_meta_data_:i2c_master_top_floorplan_dppinassgn.err" designName="i2c_master_top_floorplan" info="" checker="Pin Placement Check" checkerVersion="" created="1788019105" createdDate="08:29:2026:23:58:25:CST" modified="1788019134" modifiedDate="08:29:2026:23:58:54:CST" interactive="false" internal="false" metaData="true" numTypes="0" numInsts="0"/>

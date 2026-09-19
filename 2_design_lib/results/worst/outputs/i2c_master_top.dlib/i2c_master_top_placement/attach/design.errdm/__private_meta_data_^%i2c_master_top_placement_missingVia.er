@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<errorData typeCount="1" majorVersion="1" minorVersion="8" name="__private_meta_data_:i2c_master_top_placement_missingVia.err" designName="i2c_master_top_placement" info="" checker="check_pg_missing_vias" checkerVersion="" created="1788020991" createdDate="08:30:2026:00:29:51:CST" modified="1788021141" modifiedDate="08:30:2026:00:32:21:CST" interactive="false" internal="false" metaData="true" numTypes="1" numInsts="0"/>

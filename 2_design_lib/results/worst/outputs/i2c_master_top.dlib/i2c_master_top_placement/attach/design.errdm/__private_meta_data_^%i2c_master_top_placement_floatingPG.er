@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<errorData typeCount="7" majorVersion="1" minorVersion="8" name="__private_meta_data_:i2c_master_top_placement_floatingPG.err" designName="i2c_master_top_placement" info="" checker="check_pg_connectivity" checkerVersion="" created="1788020990" createdDate="08:30:2026:00:29:50:CST" modified="1788021140" modifiedDate="08:30:2026:00:32:20:CST" interactive="false" internal="false" metaData="true" numTypes="7" numInsts="0"/>
