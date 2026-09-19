@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : i2c_master_top
+Version: O-2018.06-SP1
+Date   : Sat Aug 29 21:50:47 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed90nm_max_hvt (File: /home/ICer/Downloads/Lib/synopsys/models/saed90nm_max_hvt.db)
+
+Number of ports:                          188
+Number of nets:                          1128
+Number of cells:                          913
+Number of combinational cells:            750
+Number of sequential cells:               159
+Number of macros/black boxes:               0
+Number of buf/inv:                        294
+Number of references:                      27
+
+Combinational area:               6809.702452
+Buf/Inv area:                     2693.836858
+Noncombinational area:            4851.302469
+Macro/Black Box area:                0.000000
+Net Interconnect area:             515.084536
+
+Total cell area:                 11661.004921
+Total area:                      12176.089457
+1
